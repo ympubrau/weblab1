@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Helvetica; 
+    src: url(HelveticaNeueCyr-Thin.ttf); 
+}
+
+.container {
+    min-width: 980px;
+    margin: 0 auto;
+    padding: 0 1%;
+    display: block;
+    border: 2px solid black;
+    background-color: beige;
+}
+
+header{
+    min-width: 1000px;    
+    min-height: 100px;
+    margin-bottom: 1%;
+}
+
+header p{
+    text-align: center;
+    font-family: Helvetica, serif;
+}
+
+.title{
+    font-size: 25px;
+}   
+
+.authors{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.table{
+    min-width: 980px;
+    text-align: center;
+    min-height: 480px;
+    padding: 1%;
+}
+
+.blocks{
+    position: relative;
+    display: inline-block;
+    min-height: 480px;
+    min-width: 460px;
+    border: 2px solid black;
+    background-color: aliceblue;
+}
+
+.graph{
+    display: inline-block;
+    margin-right: 3%;
+}
+    
+svg{
+    text-align: center;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+#triangle:hover .contour_line{
+    stroke: #00FF00;
+}
+
+#triangle:hover .figure{
+    fill: #99FF99;
+}
+
+#rect:hover .contour_line{
+    stroke: #00FF00;
+}
+
+#rect:hover .figure{
+    fill: #99FF99;
+}
+
+#circle:hover .contour_line{
+    stroke: #00FF00;
+}
+
+#circle:hover .figure{
+    fill: #99FF99;
+}
+
+
+.Xform{
+    min-width: 300px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.Xform input{
+    top: 30px;
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Xform label p{
+    position: absolute;
+    font: 30px Helvetica;
+}
+
+.addtxt{
+    margin: 0;
+    position: absolute;
+    font: 25px Helvetica;
+    top: 80px;
+    left: 160px;
+}
+
+.Yform{
+    min-width: 300px;
+    left: 20px;
+    position: absolute;
+}
+
+.Yform p{
+    position: absolute;
+    font: 30px Helvetica;
+    top: 140px;
+}
+
+.Yform{
+    min-width: 300px;
+}
+
+.boxy{
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    top: 210px;
+    left: 10px;
+}
+
+.Yform label{
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.Yform input{
+    display: inline-block;
+    margin-right : 10px;
+    margin-left: 0;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.Yform input:last-child{
+    margin-right : 0;
+}
+
+.Rform p{
+    margin: 0;
+    position: absolute;
+    font: 30px Helvetica;
+    top: 290px;
+    left: 20px;
+}
+
+.Rform{
+    min-width: 300px;
+}
+
+.boxr{
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    top: 340px;
+    left: 20px;
+}
+
+.Rform input{
+    display: inline-block;
+    margin-right : 10px;
+    margin-left: 0;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.btn{
+    position: absolute;
+    top: 420px;
+    width: 200px;
+    left: 120px;
+    
+}
+
+input[type="submit" i]{
+    text-align: center;
+    font: 20px Helvetica;
+    border: 2px solid LightGrey;
+    border-radius: 10px;
+    width: 140px;
+    height: 30px;
+}
+
+input[type="submit" i]:hover{
+    border: 2px solid grey;
+    background: Gainsboro;
+}
+
+input[type="text" i]:focus{
+    border-radius: 0; 
+}
+
+.php_connect{
+    padding-top: 1%
+}
+
+caption{
+    display: block;
+    text-align: center;
+    font: 30px Helvetica;
+}
+
+
+table{
+    min-height: 150px;
+    background-color: beige;
+    margin: 1% auto;
+    min-width: 980px;
+    text-align: center;
+}
+
+tr{
+    display: block;
+    width: 980px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1%;
+}   
+
+
+td{
+    display: inline-block;
+    margin: 0 auto;
+    min-width: 230px;
+    min-height: 70px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+td p{
+    display: inline-block;
+    font: 20px Helvetica;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+
+
+    
+
+
+

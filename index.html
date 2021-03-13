@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<title>web lab 1</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href = "style.css">
+
+<head>
+    <header>
+        <div class="container">
+            <p class = "title">Лабораторная работа №1, Bариант 2716</p>
+            <p class = "authors">Made by ympubrau ©</p>
+        </div>
+    </header>
+</head>
+
+<body>
+    <div class = "container table">
+        <div class = " blocks graph">
+            <svg  version="1.1" width="400" height="400"
+            xmlns="http://www.w3.org/2000/svg">
+             
+            <!-- triangle -->
+            <g id="triangle">
+                <polygon class="figure" points="100,200 200,200 200,300" fill="#00CCFF"/>
+                <line class="contour_line" x1="100" y1="200" x2="200" y2="300" stroke="#0033CC" stroke-width="1"/>
+            </g>   
+                
+            <!-- rectangle -->
+            <g id="rect">
+                <rect class="figure" x="200" y="200" width="100" height="100" fill="#FF99FF"/>
+                <line class="contour_line" x1="300" y1="200" x2="300" y2="300" stroke="#FF33CC" stroke-width="1"/>
+                <line class="contour_line" x1="200" y1="300" x2="300" y2="300" stroke="#FF33CC" stroke-width="1"/>  
+            </g>
+            
+            <!-- circle -->
+            <g id="circle" transform="rotate(-90 200 200)">
+                <circle class="contour_line" cx="200" cy="200" r="50" stroke="#FF3333" stroke-dasharray ="78.5 235.5" fill="none"></circle>
+                <path class="figure" d="M 200 200 C 200 200 200 200 200 200  L 200 250 C 227.61 250 250 227.61 250 200  Z" fill="#FFB6C1"></path>
+            </g>
+                
+            <!--axis -->   
+            <line x1="50" y1="200" x2="350" y2="200" stroke="#000000"/>
+            <line x1="200" y1="50" x2="200" y2="350" stroke="#000000"/>
+                
+            <!-- X axis arrow -->    
+            <line x1="350" y1="200" x2="345" y2="197" stroke="#000000"/>
+            <line x1="350" y1="200" x2="345" y2="203" stroke="#000000"/> 
+                
+            <!-- Y axis arrow -->    
+            <line x1="200" y1="50" x2="197" y2="55" stroke="#000000"/>
+            <line x1="200" y1="50" x2="203" y2="55" stroke="#000000"/> 
+                
+            <!-- X axis serifs -->
+            <line x1="100" y1="197" x2="100" y2="203" stroke="#000000"/>
+            <text class="svg_text" x="90" y="190">-R</text>    
+            <line x1="150" y1="197" x2="150" y2="203" stroke="#000000"/>
+            <text class="svg_text" x="135" y="190">-R/2</text>      
+            <line x1="250" y1="197" x2="250" y2="203" stroke="#000000"/>
+            <text class="svg_text" x="240" y="190">R/2</text>
+            <line x1="300" y1="197" x2="300" y2="203" stroke="#000000"/>
+            <text class="svg_text" x="295" y="190">R</text>
+                
+            <!-- Y axis serifs -->
+            <line x1="197" y1="300" x2="203" y2="300" stroke="#000000"/>    
+            <text class="svg_text" x="210" y="103">R</text> 
+            <line x1="197" y1="150" x2="203" y2="150" stroke="#000000"/>
+            <text class="svg_text" x="210" y="253">R/2</text>     
+            <line x1="197" y1="250" x2="203" y2="250" stroke="#000000"/>
+            <text class="svg_text" x="210" y="153">-R/2</text>
+            <line x1="197" y1="100" x2="203" y2="100" stroke="#000000"/>
+            <text class="svg_text" x="210" y="303">-R</text>       
+            
+            </svg>
+        </div>
+        <div class = "blocks parameters">
+            <form method="post" action="script.php" >
+                <div class="Xform">
+                    <label for="Xvalue"> <p>Введите Х:</p> </label>
+                    <input type="text" value="" id="Xvalue" name="Xform">
+                    <p class="addtxt">X∈{-3;3}</p>
+                </div>
+                
+                <div class="Yform">
+                    <p>Выберите Y:</p>
+                    <div class="boxy">
+                        
+                        <label for="y1">-5</label>
+                        <input type="radio" id="y1" name="yForm" value="-5">
+                        
+                        <label for="y2">-4</label>
+                        <input type="radio" id="y2" name="yForm" value="-4">
+
+                        <label for="y3">-3</label>
+                        <input type="radio" id="y3" name="yForm" value="-3">
+                        
+                        <label for="y4">-2</label>
+                        <input type="radio" id="y4" name="yForm" value="-2">
+                        
+                        <label for="y5">-1</label>
+                        <input type="radio" id="y5" name="yForm" value="-1">
+            
+                        <label for="y6">0</label>
+                        <input type="radio" id="y6" name="yForm" value="0">
+                        
+                        <label for="y7">1</label>
+                        <input type="radio" id="y7" name="yForm" value="1">
+                    
+                        <label for="y8">2</label>
+                        <input type="radio" id="y8" name="yForm" value="2">
+                        
+                        <label for="y9">3</label>
+                        <input type="radio" id="y9" name="yForm" value="3">
+                        
+                    </div>
+                </div>
+                
+                <div class="Rform">
+                    <p>Выберите R:</p>
+                    <div class="boxr">
+                        <label for="r1">1</label>
+                        <input type="radio" id="r1" name="rForm" value="1">
+                        
+                        <label for="r2">1.5</label>
+                        <input type="radio" id="r2" name="rForm" value="1.5">
+
+                        <label for="r3">2</label>
+                        <input type="radio" id="r3" name="rForm" value="2">
+                        
+                        <label for="r4">2.5</label>
+                        <input type="radio" id="r4" name="rForm" value="2.5">
+                        
+                        <label for="r5">3</label>
+                        <input type="radio" id="r5" name="rForm" value="3">
+                    </div>
+                </div>
+                
+                <div class="btn">
+                    <input type="submit" id="submt" name="submtbtn" value="подтвердить">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="php_connect">
+        <div class="container">
+            <table>
+                 <caption>Results</caption>
+                <tr>
+                    <td>
+                        <p><?php echo $str;?></p>
+                    </td>
+                    <td>
+                        <p><?php echo $x1;?></p>
+                    </td>
+                    <td>
+                        <p><?php echo $y1;?></p>
+                    </td>
+                    <td>
+                        <p><?php echo $r1;?></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
